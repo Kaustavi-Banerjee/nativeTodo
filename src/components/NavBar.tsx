@@ -11,11 +11,10 @@ export default function NavBar() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Todo List"
+          name="TodoList"
           component={TodoListScreen}
-          options={{ title: 'TodoList' }}
         />
-        <Stack.Screen name="Todo Form" component={TodoFormScreen} />
+        <Stack.Screen name="TodoForm" component={TodoFormScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

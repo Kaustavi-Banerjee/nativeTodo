@@ -11,6 +11,9 @@ const styles = StyleSheet.create({
   },
   paddingT30: {
     paddingTop: 30
+  },
+  padding15: {
+    padding: 15
   }
 })
 
