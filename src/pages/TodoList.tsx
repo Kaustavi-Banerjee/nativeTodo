@@ -1,13 +1,14 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { StatusBar } from 'expo-status-bar';
 import styles from '../styles/common.style'
+import typographyStyle from '../styles/typography.style'
 
-export default function TodoList() {
+export default function TodoListScreen() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on my app!</Text>
-      <StatusBar style="auto" />
+      <View style={[styles.flexContainer, styles.paddingT30]}>
+        <Text style={typographyStyle.title}>TodoList</Text>
+      </View>
     </View>
   )
 }

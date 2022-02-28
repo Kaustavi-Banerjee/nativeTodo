@@ -4,9 +4,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  flexContainer: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  paddingT30: {
+    paddingTop: 30
+  }
 })
 
 export default styles;

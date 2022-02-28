@@ -1,8 +1,8 @@
 import React from 'react';
-import TodoList from './src/pages/TodoList';
+import NavBar from './src/components/NavBar';
 
 export default function App() {
   return (
-    <TodoList />
+    <NavBar />
   );
 }
