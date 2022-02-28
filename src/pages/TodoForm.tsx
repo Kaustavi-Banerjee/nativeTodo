@@ -3,14 +3,16 @@ import { Controller, useForm } from 'react-hook-form'
 import { Button, Text, TextInput, Alert, View } from 'react-native'
 import formStyle from '../styles/form.style';
 
-
 interface FormData {
   item: string;
 }
 
 export default function TodoFormScreen() {
-  const { control, handleSubmit, formState: { errors } } = useForm<FormData>();
-  const onSubmit = (data: FormData) => {Alert.alert(data.item)};
+  const { control, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
+  const onSubmit = (data: FormData) => {
+    Alert.alert(data.item);
+    reset();
+  };
 
   return (
     <View style={{ padding: 15 }}>
